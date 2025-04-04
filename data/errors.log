@@ -1,0 +1,190 @@
+[2025-04-03T02:40:15.565Z] Context: https://www.indiehackers.com/products
+TypeError: Cannot read properties of undefined (reading 'startsWith')
+    at getQueryHandlerAndSelector (/Users/rodin/Desktop/Atova Scraper v3/node_modules/puppeteer-core/lib/cjs/puppeteer/common/GetQueryHandler.js:37:30)
+    at CdpFrame.waitForSelector (/Users/rodin/Desktop/Atova Scraper v3/node_modules/puppeteer-core/lib/cjs/puppeteer/api/Frame.js:531:116)
+    at CdpFrame.<anonymous> (/Users/rodin/Desktop/Atova Scraper v3/node_modules/puppeteer-core/lib/cjs/puppeteer/util/decorators.js:109:27)
+    at CdpPage.waitForSelector (/Users/rodin/Desktop/Atova Scraper v3/node_modules/puppeteer-core/lib/cjs/puppeteer/api/Page.js:1373:43)
+    at scrapeIndieHackers (/Users/rodin/Desktop/Atova Scraper v3/scrapers/indiehackers.js:73:16)
+    at async run (/Users/rodin/Desktop/Atova Scraper v3/src/scraper.js:8:7)
+
+[2025-04-03T16:31:43.228Z] Context: https://www.indiehackers.com/products
+TimeoutError: Waiting for selector `div.product-card__content` failed: Waiting failed: 15000ms exceeded
+    at new WaitTask (/Users/rodin/Desktop/Atova Scraper v3/node_modules/puppeteer-core/lib/cjs/puppeteer/common/WaitTask.js:48:34)
+    at IsolatedWorld.waitForFunction (/Users/rodin/Desktop/Atova Scraper v3/node_modules/puppeteer-core/lib/cjs/puppeteer/api/Realm.js:25:26)
+    at CSSQueryHandler.waitFor (/Users/rodin/Desktop/Atova Scraper v3/node_modules/puppeteer-core/lib/cjs/puppeteer/common/QueryHandler.js:178:95)
+    at async CdpFrame.waitForSelector (/Users/rodin/Desktop/Atova Scraper v3/node_modules/puppeteer-core/lib/cjs/puppeteer/api/Frame.js:532:21)
+    at async CdpPage.waitForSelector (/Users/rodin/Desktop/Atova Scraper v3/node_modules/puppeteer-core/lib/cjs/puppeteer/api/Page.js:1373:20)
+    at async scrapeIndieHackers (/Users/rodin/Desktop/Atova Scraper v3/scrapers/indiehackers.js:100:5)
+    at async run (/Users/rodin/Desktop/Atova Scraper v3/src/scraper.js:8:7)
+
+[2025-04-03T16:32:04.106Z] Context: https://www.indiehackers.com/products
+TargetCloseError: Waiting for selector `div.product-card__content` failed: Protocol error (Runtime.callFunctionOn): Target closed
+    at CallbackRegistry.clear (/Users/rodin/Desktop/Atova Scraper v3/node_modules/puppeteer-core/lib/cjs/puppeteer/common/CallbackRegistry.js:80:36)
+    at CdpCDPSession.onClosed (/Users/rodin/Desktop/Atova Scraper v3/node_modules/puppeteer-core/lib/cjs/puppeteer/cdp/CdpSession.js:114:25)
+    at Connection.onMessage (/Users/rodin/Desktop/Atova Scraper v3/node_modules/puppeteer-core/lib/cjs/puppeteer/cdp/Connection.js:140:25)
+    at WebSocket.<anonymous> (/Users/rodin/Desktop/Atova Scraper v3/node_modules/puppeteer-core/lib/cjs/puppeteer/node/NodeWebSocketTransport.js:43:32)
+    at callListener (/Users/rodin/Desktop/Atova Scraper v3/node_modules/ws/lib/event-target.js:290:14)
+    at WebSocket.onMessage (/Users/rodin/Desktop/Atova Scraper v3/node_modules/ws/lib/event-target.js:209:9)
+    at WebSocket.emit (node:events:518:28)
+    at Receiver.receiverOnMessage (/Users/rodin/Desktop/Atova Scraper v3/node_modules/ws/lib/websocket.js:1220:20)
+    at Receiver.emit (node:events:518:28)
+    at Immediate.<anonymous> (/Users/rodin/Desktop/Atova Scraper v3/node_modules/ws/lib/receiver.js:601:16)
+
+[2025-04-03T16:39:22.925Z] Context: https://www.indiehackers.com/products
+TypeError: page.waitForTimeout is not a function
+    at scrapeIndieHackers (/Users/rodin/Desktop/Atova Scraper v3/scrapers/indiehackers.js:100:16)
+    at async run (/Users/rodin/Desktop/Atova Scraper v3/src/scraper.js:8:7)
+
+[2025-04-03T16:51:13.684Z] Context: https://www.indiehackers.com/products
+TypeError: page.waitForTimeout is not a function
+    at scrapeIndieHackers (/Users/rodin/Desktop/Atova Scraper v3/scrapers/indiehackers.js:100:16)
+    at async run (/Users/rodin/Desktop/Atova Scraper v3/src/scraper.js:8:7)
+
+[2025-04-03T17:05:44.763Z] Context: https://www.indiehackers.com/products
+TypeError: page.waitForTimeout is not a function
+    at login (/Users/rodin/Desktop/Atova Scraper v3/scrapers/indiehackers.js:36:14)
+    at async scrapeIndieHackers (/Users/rodin/Desktop/Atova Scraper v3/scrapers/indiehackers.js:97:5)
+    at async run (/Users/rodin/Desktop/Atova Scraper v3/src/scraper.js:8:7)
+
+[2025-04-03T17:07:26.729Z] Context: https://www.indiehackers.com/products
+TypeError: page.waitForTimeout is not a function
+    at login (/Users/rodin/Desktop/Atova Scraper v3/scrapers/indiehackers.js:36:14)
+    at async scrapeIndieHackers (/Users/rodin/Desktop/Atova Scraper v3/scrapers/indiehackers.js:97:5)
+    at async run (/Users/rodin/Desktop/Atova Scraper v3/src/scraper.js:8:7)
+
+[2025-04-03T17:11:43.767Z] Context: https://www.indiehackers.com/products
+TimeoutError: Waiting for selector `div.product-card__content` failed: Waiting failed: 15000ms exceeded
+    at new WaitTask (/Users/rodin/Desktop/Atova Scraper v3/node_modules/puppeteer-core/lib/cjs/puppeteer/common/WaitTask.js:48:34)
+    at IsolatedWorld.waitForFunction (/Users/rodin/Desktop/Atova Scraper v3/node_modules/puppeteer-core/lib/cjs/puppeteer/api/Realm.js:25:26)
+    at CSSQueryHandler.waitFor (/Users/rodin/Desktop/Atova Scraper v3/node_modules/puppeteer-core/lib/cjs/puppeteer/common/QueryHandler.js:178:95)
+    at async CdpFrame.waitForSelector (/Users/rodin/Desktop/Atova Scraper v3/node_modules/puppeteer-core/lib/cjs/puppeteer/api/Frame.js:532:21)
+    at async CdpPage.waitForSelector (/Users/rodin/Desktop/Atova Scraper v3/node_modules/puppeteer-core/lib/cjs/puppeteer/api/Page.js:1373:20)
+    at async scrapeIndieHackers (/Users/rodin/Desktop/Atova Scraper v3/scrapers/indiehackers.js:108:5)
+    at async run (/Users/rodin/Desktop/Atova Scraper v3/src/scraper.js:8:7)
+
+[2025-04-03T17:18:00.119Z] Context: https://www.indiehackers.com/products
+Error: Attempted to use detached Frame '80E4D1B6C5C24E8B108496BA173051B8'.
+    at CdpFrame.<anonymous> (/Users/rodin/Desktop/Atova Scraper v3/node_modules/puppeteer-core/lib/cjs/puppeteer/util/decorators.js:107:23)
+    at CdpPage.evaluate (/Users/rodin/Desktop/Atova Scraper v3/node_modules/puppeteer-core/lib/cjs/puppeteer/api/Page.js:812:43)
+    at scrollDown (/Users/rodin/Desktop/Atova Scraper v3/scrapers/indiehackers.js:64:14)
+    at scrapeIndieHackers (/Users/rodin/Desktop/Atova Scraper v3/scrapers/indiehackers.js:105:11)
+    at async run (/Users/rodin/Desktop/Atova Scraper v3/src/scraper.js:8:7)
+
+[2025-04-03T17:47:25.728Z] Context: https://www.indiehackers.com/products
+Error: Attempted to use detached Frame '299192A21C7114DD1DD4820A4791BE72'.
+    at CdpFrame.<anonymous> (/Users/rodin/Desktop/Atova Scraper v3/node_modules/puppeteer-core/lib/cjs/puppeteer/util/decorators.js:107:23)
+    at CdpPage.evaluate (/Users/rodin/Desktop/Atova Scraper v3/node_modules/puppeteer-core/lib/cjs/puppeteer/api/Page.js:812:43)
+    at scrollDown (/Users/rodin/Desktop/Atova Scraper v3/scrapers/indiehackers.js:65:14)
+    at scrapeIndieHackers (/Users/rodin/Desktop/Atova Scraper v3/scrapers/indiehackers.js:106:11)
+    at async run (/Users/rodin/Desktop/Atova Scraper v3/src/scraper.js:8:7)
+
+[2025-04-03T17:48:57.280Z] Context: https://www.indiehackers.com/products
+Error: Attempted to use detached Frame 'A59D8F9084D6C506835F2D4EB5901AA7'.
+    at CdpFrame.<anonymous> (/Users/rodin/Desktop/Atova Scraper v3/node_modules/puppeteer-core/lib/cjs/puppeteer/util/decorators.js:107:23)
+    at CdpPage.evaluate (/Users/rodin/Desktop/Atova Scraper v3/node_modules/puppeteer-core/lib/cjs/puppeteer/api/Page.js:812:43)
+    at scrollDown (/Users/rodin/Desktop/Atova Scraper v3/scrapers/indiehackers.js:65:14)
+    at scrapeIndieHackers (/Users/rodin/Desktop/Atova Scraper v3/scrapers/indiehackers.js:106:11)
+    at async run (/Users/rodin/Desktop/Atova Scraper v3/src/scraper.js:8:7)
+
+[2025-04-03T17:50:08.161Z] Context: https://www.indiehackers.com/products
+Error: Attempted to use detached Frame '108314B49EB027A51E63946271C7D966'.
+    at CdpFrame.<anonymous> (/Users/rodin/Desktop/Atova Scraper v3/node_modules/puppeteer-core/lib/cjs/puppeteer/util/decorators.js:107:23)
+    at CdpPage.evaluate (/Users/rodin/Desktop/Atova Scraper v3/node_modules/puppeteer-core/lib/cjs/puppeteer/api/Page.js:812:43)
+    at scrollDown (/Users/rodin/Desktop/Atova Scraper v3/scrapers/indiehackers.js:65:14)
+    at scrapeIndieHackers (/Users/rodin/Desktop/Atova Scraper v3/scrapers/indiehackers.js:106:11)
+    at async run (/Users/rodin/Desktop/Atova Scraper v3/src/scraper.js:8:7)
+
+[2025-04-03T17:50:33.162Z] Context: https://www.indiehackers.com/products
+TimeoutError: Waiting for selector `div.product-card__content` failed: Waiting failed: 10000ms exceeded
+    at new WaitTask (/Users/rodin/Desktop/Atova Scraper v3/node_modules/puppeteer-core/lib/cjs/puppeteer/common/WaitTask.js:48:34)
+    at IsolatedWorld.waitForFunction (/Users/rodin/Desktop/Atova Scraper v3/node_modules/puppeteer-core/lib/cjs/puppeteer/api/Realm.js:25:26)
+    at CSSQueryHandler.waitFor (/Users/rodin/Desktop/Atova Scraper v3/node_modules/puppeteer-core/lib/cjs/puppeteer/common/QueryHandler.js:178:95)
+    at async CdpFrame.waitForSelector (/Users/rodin/Desktop/Atova Scraper v3/node_modules/puppeteer-core/lib/cjs/puppeteer/api/Frame.js:532:21)
+    at async CdpPage.waitForSelector (/Users/rodin/Desktop/Atova Scraper v3/node_modules/puppeteer-core/lib/cjs/puppeteer/api/Page.js:1373:20)
+    at async scrapeIndieHackers (/Users/rodin/Desktop/Atova Scraper v3/scrapers/indiehackers.js:96:5)
+    at async run (/Users/rodin/Desktop/Atova Scraper v3/src/scraper.js:8:7)
+
+[2025-04-03T17:58:25.127Z] Context: https://www.indiehackers.com/products
+TimeoutError: Waiting for selector `div.product-card__content` failed: Waiting failed: 10000ms exceeded
+    at new WaitTask (/Users/rodin/Desktop/Atova Scraper v3/node_modules/puppeteer-core/lib/cjs/puppeteer/common/WaitTask.js:48:34)
+    at IsolatedWorld.waitForFunction (/Users/rodin/Desktop/Atova Scraper v3/node_modules/puppeteer-core/lib/cjs/puppeteer/api/Realm.js:25:26)
+    at CSSQueryHandler.waitFor (/Users/rodin/Desktop/Atova Scraper v3/node_modules/puppeteer-core/lib/cjs/puppeteer/common/QueryHandler.js:178:95)
+    at async CdpFrame.waitForSelector (/Users/rodin/Desktop/Atova Scraper v3/node_modules/puppeteer-core/lib/cjs/puppeteer/api/Frame.js:532:21)
+    at async CdpPage.waitForSelector (/Users/rodin/Desktop/Atova Scraper v3/node_modules/puppeteer-core/lib/cjs/puppeteer/api/Page.js:1373:20)
+    at async scrapeIndieHackers (/Users/rodin/Desktop/Atova Scraper v3/scrapers/indiehackers.js:100:5)
+    at async run (/Users/rodin/Desktop/Atova Scraper v3/src/scraper.js:8:7)
+
+[2025-04-03T18:04:10.419Z] Context: https://www.indiehackers.com/products
+Error: Navigating frame was detached
+    at #onFrameDetached (/Users/rodin/Desktop/Atova Scraper v3/node_modules/puppeteer-core/lib/cjs/puppeteer/cdp/LifecycleWatcher.js:103:47)
+    at /Users/rodin/Desktop/Atova Scraper v3/node_modules/puppeteer-core/lib/cjs/third_party/mitt/mitt.js:62:7
+    at Array.map (<anonymous>)
+    at Object.emit (/Users/rodin/Desktop/Atova Scraper v3/node_modules/puppeteer-core/lib/cjs/third_party/mitt/mitt.js:61:20)
+    at CdpFrame.emit (/Users/rodin/Desktop/Atova Scraper v3/node_modules/puppeteer-core/lib/cjs/puppeteer/common/EventEmitter.js:83:23)
+    at #removeFramesRecursively (/Users/rodin/Desktop/Atova Scraper v3/node_modules/puppeteer-core/lib/cjs/puppeteer/cdp/FrameManager.js:455:15)
+    at #onClientDisconnect (/Users/rodin/Desktop/Atova Scraper v3/node_modules/puppeteer-core/lib/cjs/puppeteer/cdp/FrameManager.js:99:42)
+
+[2025-04-03T18:19:22.726Z] Context: https://www.indiehackers.com/products
+Error: Navigating frame was detached
+    at #onFrameDetached (/Users/rodin/Desktop/Atova Scraper v3/node_modules/puppeteer-core/lib/cjs/puppeteer/cdp/LifecycleWatcher.js:103:47)
+    at /Users/rodin/Desktop/Atova Scraper v3/node_modules/puppeteer-core/lib/cjs/third_party/mitt/mitt.js:62:7
+    at Array.map (<anonymous>)
+    at Object.emit (/Users/rodin/Desktop/Atova Scraper v3/node_modules/puppeteer-core/lib/cjs/third_party/mitt/mitt.js:61:20)
+    at CdpFrame.emit (/Users/rodin/Desktop/Atova Scraper v3/node_modules/puppeteer-core/lib/cjs/puppeteer/common/EventEmitter.js:83:23)
+    at #removeFramesRecursively (/Users/rodin/Desktop/Atova Scraper v3/node_modules/puppeteer-core/lib/cjs/puppeteer/cdp/FrameManager.js:455:15)
+    at #onClientDisconnect (/Users/rodin/Desktop/Atova Scraper v3/node_modules/puppeteer-core/lib/cjs/puppeteer/cdp/FrameManager.js:99:42)
+
+[2025-04-03T18:29:00.655Z] Context: https://www.indiehackers.com/products
+Error: Navigating frame was detached
+    at #onFrameDetached (/Users/rodin/Desktop/Atova Scraper v3/node_modules/puppeteer-core/lib/cjs/puppeteer/cdp/LifecycleWatcher.js:103:47)
+    at /Users/rodin/Desktop/Atova Scraper v3/node_modules/puppeteer-core/lib/cjs/third_party/mitt/mitt.js:62:7
+    at Array.map (<anonymous>)
+    at Object.emit (/Users/rodin/Desktop/Atova Scraper v3/node_modules/puppeteer-core/lib/cjs/third_party/mitt/mitt.js:61:20)
+    at CdpFrame.emit (/Users/rodin/Desktop/Atova Scraper v3/node_modules/puppeteer-core/lib/cjs/puppeteer/common/EventEmitter.js:83:23)
+    at #removeFramesRecursively (/Users/rodin/Desktop/Atova Scraper v3/node_modules/puppeteer-core/lib/cjs/puppeteer/cdp/FrameManager.js:455:15)
+    at #onClientDisconnect (/Users/rodin/Desktop/Atova Scraper v3/node_modules/puppeteer-core/lib/cjs/puppeteer/cdp/FrameManager.js:99:42)
+
+[2025-04-03T19:48:55.030Z] Context: https://www.indiehackers.com/products
+Error: Navigating frame was detached
+    at #onFrameDetached (/Users/rodin/Desktop/Atova Scraper v3/node_modules/puppeteer-core/lib/cjs/puppeteer/cdp/LifecycleWatcher.js:103:47)
+    at /Users/rodin/Desktop/Atova Scraper v3/node_modules/puppeteer-core/lib/cjs/third_party/mitt/mitt.js:62:7
+    at Array.map (<anonymous>)
+    at Object.emit (/Users/rodin/Desktop/Atova Scraper v3/node_modules/puppeteer-core/lib/cjs/third_party/mitt/mitt.js:61:20)
+    at CdpFrame.emit (/Users/rodin/Desktop/Atova Scraper v3/node_modules/puppeteer-core/lib/cjs/puppeteer/common/EventEmitter.js:83:23)
+    at #removeFramesRecursively (/Users/rodin/Desktop/Atova Scraper v3/node_modules/puppeteer-core/lib/cjs/puppeteer/cdp/FrameManager.js:455:15)
+    at #onClientDisconnect (/Users/rodin/Desktop/Atova Scraper v3/node_modules/puppeteer-core/lib/cjs/puppeteer/cdp/FrameManager.js:99:42)
+
+[2025-04-03T19:52:37.003Z] Context: https://www.indiehackers.com/products
+Error: Navigating frame was detached
+    at #onFrameDetached (/Users/rodin/Desktop/Atova Scraper v3/node_modules/puppeteer-core/lib/cjs/puppeteer/cdp/LifecycleWatcher.js:103:47)
+    at /Users/rodin/Desktop/Atova Scraper v3/node_modules/puppeteer-core/lib/cjs/third_party/mitt/mitt.js:62:7
+    at Array.map (<anonymous>)
+    at Object.emit (/Users/rodin/Desktop/Atova Scraper v3/node_modules/puppeteer-core/lib/cjs/third_party/mitt/mitt.js:61:20)
+    at CdpFrame.emit (/Users/rodin/Desktop/Atova Scraper v3/node_modules/puppeteer-core/lib/cjs/puppeteer/common/EventEmitter.js:83:23)
+    at #removeFramesRecursively (/Users/rodin/Desktop/Atova Scraper v3/node_modules/puppeteer-core/lib/cjs/puppeteer/cdp/FrameManager.js:455:15)
+    at #onClientDisconnect (/Users/rodin/Desktop/Atova Scraper v3/node_modules/puppeteer-core/lib/cjs/puppeteer/cdp/FrameManager.js:99:42)
+
+[2025-04-04T04:20:11.633Z] Context: https://www.indiehackers.com/products
+Error: ❌ Could not find 5 unique startups after scrolling.
+    at getUniqueBatch (/Users/rodin/Desktop/Atova Scraper v3/scrapers/indiehackers.js:101:9)
+    at async scrapeIndieHackers (/Users/rodin/Desktop/Atova Scraper v3/scrapers/indiehackers.js:117:24)
+    at async /Users/rodin/Desktop/Atova Scraper v3/server.js:15:5
+
+[2025-04-04T04:25:46.813Z] Context: https://www.indiehackers.com/products
+Error: ❌ Could not find 5 unique startups after scrolling.
+    at getUniqueBatch (/Users/rodin/Desktop/Atova Scraper v3/scrapers/indiehackers.js:101:9)
+    at async scrapeIndieHackers (/Users/rodin/Desktop/Atova Scraper v3/scrapers/indiehackers.js:117:24)
+    at async /Users/rodin/Desktop/Atova Scraper v3/server.js:15:5
+
+[2025-04-04T04:27:15.802Z] Context: https://www.indiehackers.com/products
+Error: ❌ Could not find 5 unique startups after scrolling.
+    at getUniqueBatch (/Users/rodin/Desktop/Atova Scraper v3/scrapers/indiehackers.js:101:9)
+    at async scrapeIndieHackers (/Users/rodin/Desktop/Atova Scraper v3/scrapers/indiehackers.js:117:24)
+    at async /Users/rodin/Desktop/Atova Scraper v3/server.js:15:5
+
+[2025-04-04T04:36:16.715Z] Context: https://www.indiehackers.com/products
+Error: ❌ Could not find 5 unique startups after scrolling.
+    at getUniqueBatch (/Users/rodin/Desktop/Atova Scraper v3/scrapers/indiehackers.js:101:9)
+    at async scrapeIndieHackers (/Users/rodin/Desktop/Atova Scraper v3/scrapers/indiehackers.js:117:24)
+    at async /Users/rodin/Desktop/Atova Scraper v3/server.js:15:5
+
