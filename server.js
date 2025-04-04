@@ -29,6 +29,9 @@ app.get('/api/indiehackers', async (req, res) => {
   }
 });
 
+// health check for render :)
+app.get('/healthz', (req, res) => res.sendStatus(200));
+
 app.listen(PORT, () => {
   console.log(`🚀 Backend running at http://localhost:${PORT}`);
 });
