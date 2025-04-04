@@ -103,9 +103,10 @@ async function getUniqueBatch(page, selectors, count, seenKeys) {
 
 async function scrapeIndieHackers() {
     const browser = await puppeteer.launch({
-      headless: true,
-      args: ['--no-sandbox', '--disable-setuid-sandbox'],
-    });
+        headless: true,
+        args: ['--no-sandbox', '--disable-setuid-sandbox'],
+        executablePath: process.env.CHROME_PATH || '/usr/bin/google-chrome-stable'
+      });      
     const page = await browser.newPage();
     await page.setViewport({ width: 1280, height: 800 });
   
