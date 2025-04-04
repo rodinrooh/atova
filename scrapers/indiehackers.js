@@ -102,7 +102,10 @@ async function getUniqueBatch(page, selectors, count, seenKeys) {
 }
 
 async function scrapeIndieHackers() {
-    const browser = await puppeteer.launch({ headless: true });
+    const browser = await puppeteer.launch({
+      headless: true,
+      args: ['--no-sandbox', '--disable-setuid-sandbox'],
+    });
     const page = await browser.newPage();
     await page.setViewport({ width: 1280, height: 800 });
   
@@ -119,7 +122,6 @@ async function scrapeIndieHackers() {
       console.log('📦 Scraped data preview:', startups);
       await saveStartups(startups);
   
-      // ✅ Update in-memory set so future scroll attempts skip duplicates
       startups.forEach(s => seenKeys.add(extractKey(s)));
   
       console.log('🚀 Scraping complete.');
@@ -129,6 +131,6 @@ async function scrapeIndieHackers() {
     } finally {
       await browser.close();
     }
-  }
+  }  
   
 module.exports = scrapeIndieHackers;
